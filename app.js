@@ -28,7 +28,7 @@ db.mainDb();
 app.get('/', (req, res) => {
  
   // Sending the response
-  res.send('Hello World!')
+  res.send('LannisterPay Fee Configuration Service by Mulubwa Chungu');
   
   // Ending the response
   res.end()
