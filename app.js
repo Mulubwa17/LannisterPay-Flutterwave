@@ -8,6 +8,8 @@ const db = require('./config/db');
 
 const app = express();
 
+const PORT = process.env.PORT || 3000;
+
 const options = {
     origin: '*',
     optionsSuccessStatus: 200,
@@ -39,4 +41,4 @@ app.use('/api', Fees);
 
 
 
-app.listen(3000, () => console.log('Connected on port 3000.'));
+app.listen(PORT, () => console.log('Connected on port 3000.'));
