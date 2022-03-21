@@ -23,9 +23,14 @@ app.use(cors(options));
 
 db.mainDb();
 
-app.get('/', function(req, res) {
-  res.send('LannisterPay assignment by Mulubwa Chungu!')
-});
+app.get('/', (req, res) => {
+ 
+  // Sending the response
+  res.send('Hello World!')
+  
+  // Ending the response
+  res.end()
+})
 
 const Fees = require('./src/routes/transaction');
 
